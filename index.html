@@ -3,10 +3,13 @@
   <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
   <meta charset="UTF-8">
   <style>
+    body{
+      font-family: futura-lt-w01-book, sans-serif;
+    }
+
     label{
       color: #333;
       font-size: 10px;
-      font-family: sans-serif;
       display: block;
       font-weight: bold;
       text-align: center;
@@ -39,6 +42,23 @@
     input[type="checkbox"]:checked + * {
       color: #333;
     }
+
+    #popup{
+      position:absolute; 
+      top:5; 
+      right:45; 
+      z-index:1;
+      background-color:#3338;
+      color:white;
+      font-size: 16px;
+      padding: 5px 10px 5px 10px;
+      display:none;
+    }
+
+    .select{
+      background-color: black;
+      color: white;
+    }
   </style>
   <script language="javascript" type="text/javascript" src="p5.js"></script>
   <script language="javascript" src="p5.dom.js"></script>
@@ -55,5 +75,6 @@
 </head>
 
 <body>
+  <div id="popup">Share link copied</div>
 </body>
 </html>
